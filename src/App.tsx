@@ -18,6 +18,9 @@ import Footer from "./components/Footer";
 import InvoiceView from "./components/OrderView/InvoiceView";
 import Dashboard from "./components/AdminArea/ShardsDesign/Dashboard";
 
+
+/*FOOTER*/
+ 
 export const ProductsContext = React.createContext<any[]>([]);
 const FinishOrder = lazy(() => import(/*webpackPreload: true*/ "./components/CartPage/FinishOrder"));
 const CartPage = lazy(() => import(/*webpackPreload: true*/ "./components/CartPage/CartPage"));
