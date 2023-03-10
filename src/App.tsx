@@ -2,6 +2,8 @@
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState, lazy } from "react";
 import ReactGA from "react-ga4";
+import ReactRouter from "react-router";
+
 
 import MainNavigation from "./Navigation/MainNavigation";
 
