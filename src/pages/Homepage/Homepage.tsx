@@ -3,6 +3,9 @@ import images from "../../data/images";
 import styles from "./Homepage.module.scss";
 import parse from "html-react-parser";
 import OurServices from "../../blocks/OurServices";
+import Reviews from './slider/Reviews';
+import ReviewCard from './slider/ReviewCard';
+
 const Homepage = () => {
   return (
     <>
@@ -23,6 +26,7 @@ const Homepage = () => {
         <img src={images.logoBrands} />
       </div>
       <OurServices />
+      <Reviews/>
     </>
   );
 };
