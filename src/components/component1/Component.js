@@ -1,6 +1,6 @@
 import React from 'react';
 import './Component.css';
-import eclipse from '../img/Ellipse 3.svg';
+import eclipse from './Ellipse 3.svg';
 
 const Component = () => {
   return (
