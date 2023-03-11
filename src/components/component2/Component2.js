@@ -2,6 +2,8 @@ import React from 'react';
 import './Component2.css';
 import eclipse2 from './Ellipse 4.svg';
 
+/* .. */
+
 const Component2 = () => {
   return (
     <div className="container2">
