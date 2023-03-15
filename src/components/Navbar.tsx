@@ -23,7 +23,7 @@ const NavBar = () => {
         <>
           <div className={styles.wrapper}>
             <div className={styles.logoWrapper}>
-              <img src={images.rionaLogoBlack} />
+              <img src={images.rionaLogo} />
             </div>
             <MenuMobile />
             <div className={styles.menuItems}>
