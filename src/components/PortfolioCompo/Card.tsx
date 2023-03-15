@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 type CardProps = {
   card: {
-    Image: string;
-    type: string;
     title: string;
-    projectLink: string;
+    link: string;
+    images: string[];
   };
   projectCall: (project: string) => void;
 };
@@ -14,13 +13,13 @@ type CardProps = {
 const Card: React.FC<CardProps> = ({ card, projectCall }) => {
   const goToTop = (_) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    projectCall(card.projectLink);
+    projectCall(card.link);
   };
 
   return (
-    <Link onClick={goToTop} className="p-0" to={`/proiect/${card.projectLink}`}>
+    <Link onClick={goToTop} className="p-0" to={`/proiect/${card.link}`}>
       <div className="col-12 p-0  card-container">
-        <img src={card.Image} alt={card.title} className="card-img" />
+        <img src={card.images[0]} alt={card.title} className="card-img" />
         <h2 className="card-title ">{card.title}</h2>
       </div>
     </Link>

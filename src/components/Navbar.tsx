@@ -28,10 +28,22 @@ const NavBar = () => {
             <MenuMobile />
             <div className={styles.menuItems}>
               <ul className={styles.navItems}>
-                <li className={styles.active}>Home</li>
-                <li>Portofoliu</li>
-                <li>Pachete</li>
-                <li>Contacte</li>
+                <li className={styles.active}>
+                  <NavHashLink className={styles.HashLinkStyle} to={"/"}>
+                    {"Home"}
+                  </NavHashLink>
+                </li>
+
+                <li>
+                  <NavHashLink className={styles.HashLinkStyle} to={"/pachete"}>
+                    {"Pachete"}
+                  </NavHashLink>
+                </li>
+                <li>
+                  <NavHashLink className={styles.HashLinkStyle} to={"/contact"}>
+                    {"Contact"}
+                  </NavHashLink>
+                </li>
               </ul>
             </div>
           </div>
