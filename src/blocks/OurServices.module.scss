@@ -11,7 +11,7 @@
   margin: auto;
   max-width: 1200px;
   align-items: center;
-
+  height: 649px;
   @include media("<tablet") {
     width: 100vw;
     display: flex;

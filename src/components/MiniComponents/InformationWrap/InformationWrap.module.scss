@@ -1,0 +1,30 @@
+@import "../../../../node_modules/include-media/dist/include-media";
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../main.module.scss";
+
+.infoWrap {
+  font-family: "Bebas Neue";
+  color: white;
+  padding: 0 12%;
+  h2 {
+    color: #ec4c45;
+    margin-bottom: 0;
+  }
+
+  @include media("<tablet") {
+    padding: 0 12%;
+  }
+}
+
+.textTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.pinIcon {
+  position: absolute;
+  margin-left: -68px;
+  margin-top: -10px;
+  width: 58px;
+  height: 58px;
+}

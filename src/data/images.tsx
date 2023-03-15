@@ -1,9 +1,10 @@
 const images = {
   rionaLogo: require("./../media/riona/riona_alb.svg").default,
   rionaLogoBlack: require("./../media/riona/riona_negru.svg").default,
-  heroBoy: require("./../media/riona/heroBoy.svg").default,
+  heroBoy: require("./../media/riona/heroBoy.png").default,
   logoBrands: require("./../media/riona/icons/logoBrands.svg").default,
   arrowRiona: require("./../media/riona/arrow.svg").default,
+  infoIcon: require("./../media/riona/infoIcon.svg").default,
   mic: require("./../media/riona/mic.svg").default,
   medii: require("./../media/riona/medii.svg").default,
   mare: require("./../media/riona/mare.svg").default,
@@ -30,7 +31,7 @@ const images = {
   finishOrder: require("./../media/assets/open-box.png").default,
   noProduct: require("./../media/assets/pics/prezentareCarbune/noProduct.png").default,
   verifiedPurchase: require("./../media/assets/checked.png").default,
-  closeIcon: require("./../media/assets/closeIcon.png").default,
+  closeIcon: require("./../media/assets/closeButton.svg").default,
   newsletterHands: require("./../media/assets/handsNewsletter.webp").default,
   refundIcon:
     "https://firebasestorage.googleapis.com/v0/b/diniubire-89ce0.appspot.com/o/icons%2FRectangle%202.png?alt=media&token=4ec69e4d-eebc-477e-ab7c-fdf07c5f1a99",

@@ -7,9 +7,11 @@
   height: 70px;
   max-width: 1200px;
   width: 100vw;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0px);
+  position: sticky;
+  left: 0%;
+  z-index: 1000;
+  outline: 3px solid white;
+  margin: auto;
 
   @include media("<tablet") {
     padding: 0 5%;
@@ -17,7 +19,6 @@
 }
 .logoWrapper {
   grid-column: span 2;
-  outline: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +35,6 @@
 
 .menuItems {
   grid-column: span 8;
-  outline: 2px solid black;
   @include media("<tablet") {
     display: none;
   }
@@ -54,6 +54,7 @@
   li {
     display: flex;
     align-items: center;
+    color: #858585;
     justify-content: center;
     cursor: pointer;
     min-width: 90px;
@@ -66,8 +67,8 @@
 }
 
 .active {
-  background-color: #ff8c33;
-  border-radius: 15px;
-  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: white !important;
   padding: 3px 11px;
 }
