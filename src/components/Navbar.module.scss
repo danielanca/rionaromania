@@ -72,3 +72,14 @@
   color: white !important;
   padding: 3px 11px;
 }
+
+.HashLinkStyle {
+  color: white;
+
+  text-decoration: none;
+  &:hover {
+    color: white;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+  }
+}

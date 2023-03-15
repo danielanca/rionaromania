@@ -1,9 +1,7 @@
 export type CardsData = {
-  id: string;
-  Image: string;
-  type: string;
   title: string;
-  projectLink: string;
+  link: string;
+  images: string[];
 };
 
 export interface CardType {

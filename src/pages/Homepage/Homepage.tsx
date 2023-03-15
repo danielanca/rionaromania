@@ -10,6 +10,9 @@ import CardsList from "../../components/PortfolioCompo/CardsList";
 import { fakeDataObject } from "../../components/PortfolioCompo/data/fake-data";
 import { Container, Carousel } from "react-bootstrap";
 import InformationWrap from "../../components/MiniComponents/InformationWrap/InformationWrap";
+import projectList from "./projectList.json";
+import { HashLink, HashLink as Link, NavHashLink } from "react-router-hash-link";
+
 const Homepage = () => {
   const fetchFakeData = async () => {
     return Promise.resolve(fakedata);
@@ -34,17 +37,13 @@ const Homepage = () => {
         <div className={styles.backdropModal}>
           <div className="container my-5">
             <div className={styles.topModal}>
-              <h1 className="project-title">Branding Photonic</h1>
+              <h1 className="project-title">{projectList[projectLink].title}</h1>
               <img onClick={closeProject} className={styles.closeStyle} src={images.closeIcon} />
             </div>
             <div className="project-container d-flex flex-column">
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
-              <img className="mt-5" src={fakeDataObject[0].Image} alt="photonic hero" />
+              {projectList[projectLink].images.map((item) => (
+                <img className="mt-3" src={item} alt="photonic hero" />
+              ))}
             </div>
           </div>
         </div>
@@ -64,8 +63,16 @@ const Homepage = () => {
               <img src={images.socialIcons.facebook} />
             </div>
             <div className={styles.actionWrapper}>
-              <button className={styles.pricesButton}>{"Preturi"}</button>
-              <button className={styles.callNow}>{"Contacteaza-ne acum"}</button>
+              <button className={styles.pricesButton}>
+                <NavHashLink className={styles.HashLinkStyle} to={"/"}>
+                  {"Preturi"}
+                </NavHashLink>
+              </button>
+              <button className={styles.callNow}>
+                <NavHashLink className={styles.HashLinkStyle} to={"/contact"}>
+                  {"Contacteaza-ne acum"}
+                </NavHashLink>
+              </button>
             </div>
           </div>
         </div>
@@ -77,7 +84,7 @@ const Homepage = () => {
       <InformationWrap />
 
       {/* <OurServices /> */}
-      <CardsList cards={cardsList} filter={activeFilter} projectUp={handleSwitchProject} />
+      <CardsList cards={Object.values(projectList)} filter={activeFilter} projectUp={handleSwitchProject} />
     </>
   );
 };
