@@ -1,259 +1,225 @@
-@import '../main.module.scss';
+@import "../../main.module.scss";
 
 .page1 {
-   max-width: 100rem;
-   margin:auto;
-   height: 100%;
-   background: url('./logo.svg'),black;
-   background-size: contain;
-   background-repeat: no-repeat;
-   padding-bottom: 3rem;
-
+  max-width: 100rem;
+  margin: auto;
+  height: 100%;
+  background: url("./logo.svg"), black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
 }
 
 .title {
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    
-    @include media('<=tablet')
-    {
-        height: 300px;
-   
-    }
+  @include media("<=tablet") {
+    height: 300px;
+  }
 }
 
+.title h1 {
+  font-size: 84px;
+  background: -webkit-linear-gradient(90.38deg, #ff6e9a 0.11%, #e7422e 97.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-.title h1{
-    font-size:84px;
-    background: -webkit-linear-gradient(90.38deg, #FF6E9A 0.11%, #E7422E 97.09%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    
-    @include media('<=tablet'){
-        font-size: 35px;
-    }
+  @include media("<=tablet") {
+    font-size: 35px;
+  }
 }
-
 
 .cardsContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 0 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0 3rem;
 
-@include media('<=tablet')
-{
+  @include media("<=tablet") {
     display: grid;
-    align-items:center;
+    align-items: center;
     row-gap: 4rem;
   }
 }
 .card {
+  width: 450px;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
 
-    width: 450px;
-    height: 100%;
-    padding: 2rem;
-    position: relative;
-
-    @include media('<=tablet')
-{
-   width:300px;
+  @include media("<=tablet") {
+    width: 300px;
   }
 }
 
-
 .cardStyle {
-    display: grid;
-    justify-content: center;
-    row-gap: 1.5rem;
+  display: grid;
+  justify-content: center;
+  row-gap: 1.5rem;
 }
-
 
 .cardTitle {
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @include media('<=tablet'){
-        font-size: 12px;
-    }
+  @include media("<=tablet") {
+    font-size: 12px;
+  }
 }
-
-
 
 .euro {
-    font-size: 32px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @include media('<=tablet'){
-        font-size: 25px;
-    }
+  @include media("<=tablet") {
+    font-size: 25px;
+  }
 }
 
-
 .cardInfo {
+  font-size: 14px;
+  font-weight: 500;
 
-    font-size:14px;
-    font-weight: 500;
-
-    @include media('<=tablet'){
-        font-size: 10px;
-    }
+  @include media("<=tablet") {
+    font-size: 10px;
+  }
 }
 
 .add1 {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .add2 {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 1);
-
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
 }
 
-
 .cardButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardButton button {
-    width: 100%;
-    background: rgba(233, 70, 55, 1);
-    border:none;
-    color: azure;
-    padding: 1rem 6rem;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
+  width: 100%;
+  background: rgba(233, 70, 55, 1);
+  border: none;
+  color: azure;
+  padding: 1rem 6rem;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
 
-    @include media('<=tablet'){
-        font-size: 12px;
-        padding: 1rem 2rem;
-    }
+  @include media("<=tablet") {
+    font-size: 12px;
+    padding: 1rem 2rem;
+  }
 }
 
-.pachete
-{
-    font-size:16px;
-    font-weight: 500;
+.pachete {
+  font-size: 16px;
+  font-weight: 500;
 
-    @include media('<=tablet'){
-        font-size: 10px;
-    }
+  @include media("<=tablet") {
+    font-size: 10px;
+  }
 }
-
 
 .pachete div {
-    display:flex;
-    padding: 0.5rem;
-    gap:1rem;
+  display: flex;
+  padding: 0.5rem;
+  gap: 1rem;
 }
 
-
-
 .manLogo {
-    position: absolute;
-    margin-top: -39%;
-    margin-left : -20%;
+  position: absolute;
+  margin-top: -39%;
+  margin-left: -20%;
 
-    
-    @include media('<=tablet')
-    {   
-        margin-top: -58%;
-        margin-left : -40%;
-    }
+  @include media("<=tablet") {
+    margin-top: -58%;
+    margin-left: -40%;
+  }
 }
 
 .manLogo2 {
-    position: absolute;
-    margin-top: -42.5%;
-    margin-left : 60%;
+  position: absolute;
+  margin-top: -42.5%;
+  margin-left: 60%;
 
-    @include media('<=tablet'){
-        display: none;
-    }
+  @include media("<=tablet") {
+    display: none;
+  }
 }
 
 .smooth {
-    height:200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .elegantCard {
-    width: 80rem;
-    margin: auto;
-    border-radius:26px ;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    color: black;
-    align-items: center;
-    padding: 4rem 2rem;
+  width: 80rem;
+  margin: auto;
+  border-radius: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  color: black;
+  align-items: center;
+  padding: 4rem 2rem;
 
-    @include media('<=tablet')
-    {
-        width: 100%;
-        background: transparent;
-        grid-template-columns: 1fr;
-        color: white;
-        padding: 1rem 1rem;
-    }
+  @include media("<=tablet") {
+    width: 100%;
+    background: transparent;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 1rem 1rem;
+  }
 }
 
 .logoElegant {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    @include media('<=tablet')
-    {
-        align-items: center;
-
-    }
+  @include media("<=tablet") {
+    align-items: center;
+  }
 }
 
-
-.logoElegant img 
-{
-    width: 100%;
-    height: 100%;
+.logoElegant img {
+  width: 100%;
+  height: 100%;
 }
 
 .textElegant {
-padding: 0 1rem;
-font-size: 20px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: -0.1454544961452484px;
-text-align: left;
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
+  padding: 0 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.1454544961452484px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 
-@include media('<=tablet')
-
-{
-
+  @include media("<=tablet") {
     font-size: 13px;
     align-items: center;
     justify-content: center;
-}
+  }
 }

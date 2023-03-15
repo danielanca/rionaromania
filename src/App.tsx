@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-rou
 import React, { useEffect, useState, lazy } from "react";
 import ReactGA from "react-ga4";
 import ReactRouter from "react-router";
-import Reviews from './slider/Reviews';
-import ReviewCard from './slider/ReviewCard';
-import Page1 from '../src/components/Component/Page1';
-import Contact from '../src/components/Contact/Contact';
-
+import Reviews from "./slider/Reviews";
+import ReviewCard from "./slider/ReviewCard";
+import Page1 from "../src/components/Component/Page1";
+import Contact from "../src/components/Contact/Contact";
 
 import MainNavigation from "./Navigation/MainNavigation";
 import { getData } from "./data/productList";
@@ -60,8 +59,8 @@ function App() {
                 <Routes>
                   <Route path={`${process.env.PUBLIC_URL}/proiect/:projectName`} element={<Homepage />} />
                   <Route path={`${process.env.PUBLIC_URL}/`} element={<Homepage />} />
-                  <Route path='/contact' element={<Contact/>} />
-                  <Route path='/package' element={<Page1/>} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/package" element={<Page1 />} />
                 </Routes>
                 <Footer />
               </AuthProvider>

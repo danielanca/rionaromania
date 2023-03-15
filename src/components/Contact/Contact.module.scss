@@ -1,259 +1,216 @@
-@import '../main.module.scss';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import "../../main.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
-.contact 
-{ 
-    font-family: 'DM Sans', sans-serif;
-    max-width: 100rem;
-    height: 100%;
-    margin:auto;
-    background: rgb(18, 15, 15);
-    color:white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 6rem 2rem;
-    padding-bottom: 3rem;
+.contact {
+  font-family: "DM Sans", sans-serif;
+  max-width: 100rem;
+  height: 100%;
+  margin: auto;
+  background: rgb(18, 15, 15);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 2rem;
+  padding-bottom: 3rem;
 
-    @include media('<=tablet'){
-
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 1rem 1rem ;
-    }
+  @include media("<=tablet") {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 1rem;
+  }
 }
 
-
-.inputs{
-
-    display: grid;
-    gap:1rem;
-    width: 90%;
-    padding: 1rem 0;
+.inputs {
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem 0;
 }
 
 .inputs input {
-    height: 3rem;
-    padding: 0 1rem;
+  height: 3rem;
+  padding: 0 1rem;
 }
 
 .selection {
-
-    display: grid;
-    gap:1rem;
-    width: 90%;
-    padding: 1rem 0;
-
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem 0;
 }
 
 select {
-    width: 100%;
-    height: 3rem;
-    padding: 0 1rem;
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
 }
 
-.textareaSection
-{
-    display: grid;
-    gap:1rem;
-    width: 90%;
-    padding: 1rem 0;
+.textareaSection {
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem 0;
 }
 
 .submitSection {
-
-    display: grid;
-    gap:1rem;
-    width: 90%;
-    padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem 0;
 }
 
 .submitSection input {
-    background-color: rgb(12, 85, 12);
-    color:white;
-    font-family: 'DM Sans', sans-serif;
-    border:none;
-    border-radius: 10px;
-    padding: 1rem 1rem;
+  background-color: rgb(12, 85, 12);
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1rem;
 }
-
 
 .textareaSection textarea {
-
-
-    height: 8rem;
+  height: 8rem;
 }
-
 
 .container1 {
+  padding: 0 6rem;
+  display: grid;
+  column-gap: 2rem;
+  height: 100%;
+  position: relative;
 
-    padding: 0 6rem;
-    display: grid;
-    column-gap:2rem;
-    height:100%;
-    position: relative;
-
-    
-    @include media('<=tablet'){
-
-        padding: 0 1rem;
-        height: 50%;
-        column-gap:0rem;
-        min-height:600px;
-    }
+  @include media("<=tablet") {
+    padding: 0 1rem;
+    height: 50%;
+    column-gap: 0rem;
+    min-height: 600px;
+  }
 }
-
 
 .container2 {
+  padding: 0 6rem;
+  display: grid;
+  column-gap: 2rem;
+  height: 100%;
+  position: relative;
 
-    padding: 0 6rem;
-    display: grid;
-    column-gap:2rem;
-    height: 100%;
-    position: relative;
-    
-    @include media('<=tablet'){
-        
-        padding: 0 1rem;
-        height: 50%;
-    }
+  @include media("<=tablet") {
+    padding: 0 1rem;
+    height: 50%;
+  }
 }
-
 
 .contactSection h1 {
-    font-family: 'DM Sans', sans-serif;
-    font-size:64px;
-    font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
 
-    @include media('<=tablet'){
-
-        font-size:30px;
-        display: none;
-    }
-
+  @include media("<=tablet") {
+    font-size: 30px;
+    display: none;
+  }
 }
-
 
 .contactSection p {
-    font-family: 'DM Sans', sans-serif;
-    font-size:20px;
-    font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 
-    
-    @include media('<=tablet'){
-
-        font-size:15px;
-        display: none;
-    }
+  @include media("<=tablet") {
+    font-size: 15px;
+    display: none;
+  }
 }
 
+.emailSection h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
 
-.emailSection h1{
-    font-family: 'DM Sans', sans-serif;
-    font-size:32px;
-    font-weight: 700;
-     
-    @include media('<=tablet'){
-
-        font-size:25px;
-    }
+  @include media("<=tablet") {
+    font-size: 25px;
+  }
 }
 
+.emailSection p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
-.emailSection p{
-    font-family: 'DM Sans', sans-serif;
-    font-size:16px;
-    font-weight: 400;
-     
-    @include media('<=tablet'){
-
-        font-size:15px;
-    }
+  @include media("<=tablet") {
+    font-size: 15px;
+  }
 }
 
-
-.phoneSection h1{
-    font-family: 'DM Sans', sans-serif;
-    font-size:32px;
-    font-weight: 700;
-    @include media('<=tablet'){
-
-        font-size:25px;
-    }
-
+.phoneSection h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  @include media("<=tablet") {
+    font-size: 25px;
+  }
 }
 
+.phoneSection p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
-.phoneSection p{
-    font-family: 'DM Sans', sans-serif;
-    font-size:16px;
-    font-weight: 400;
-     
-    @include media('<=tablet'){
-
-        font-size:15px;
-    }
+  @include media("<=tablet") {
+    font-size: 15px;
+  }
 }
 
-
-.socialSection h1{
-    font-family: 'DM Sans', sans-serif;
-    font-size:32px;
-    font-weight: 700;
-    @include media('<=tablet'){
-
-        font-size:25px;
-    }
-
+.socialSection h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  @include media("<=tablet") {
+    font-size: 25px;
+  }
 }
 
+.socialSection p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline white;
 
-.socialSection p{
-    font-family: 'DM Sans', sans-serif;
-    font-size:16px;
-    font-weight: 400;
-    text-decoration: underline white;
-     
-    @include media('<=tablet'){
-
-        font-size:15px;
-    }
+  @include media("<=tablet") {
+    font-size: 15px;
+  }
 }
-
 
 .contactLogo {
-    
-position: absolute;
-margin-left:17%;
-margin-top:55%;
-@include media('<=tablet'){
+  position: absolute;
+  margin-left: 17%;
+  margin-top: 55%;
+  @include media("<=tablet") {
     display: none;
-}
+  }
 }
 
 .mobileLogo {
-    display: none;
-    @include media('<=tablet'){
-        display: block;
-        width: 80%;
-        height: 80%;
-        
-}
+  display: none;
+  @include media("<=tablet") {
+    display: block;
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .mobileHeader {
-    display: none;
-  
-    
-    @include media('<=tablet'){
-        width: 100%;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size:27px;
-        font-weight: 700;
-        font-family: 'DM Sans', sans-serif;
+  display: none;
 
-}
+  @include media("<=tablet") {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+  }
 }
