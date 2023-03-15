@@ -1,33 +1,20 @@
-import ReactGA from 'react-ga4';
-import { useTranslation } from 'react-i18next';
-import ReviewCard from '../components/ReviewCard';
-import DragItem from '../components/DragItem/DragItem';
-import styles from './Reviews.module.scss';
-import React ,{ useState } from 'react';
-import img1 from './images/1.png';
-import img2 from './images/2.png';
-import img3 from './images/3.png';
+import ReactGA from "react-ga4";
+import ReviewCard from "./ReviewCard";
+import DragItem from "./DragItem/DragItem";
+import styles from "./Reviews.module.scss";
+import React, { useState } from "react";
+import img1 from "./images/1.png";
+import img2 from "./images/2.png";
+import img3 from "./images/3.png";
 
-
-
-const photos : string[] = [
-
-  img1,
-  img2,
-  img3,
-  img1,
-  img2,
-
-]
+const photos: string[] = [img1, img2, img3, img1, img2];
 
 const Reviews = () => {
   const [CardIndex, setCardIndex] = useState(2);
-  const { t } = useTranslation();
   const [coord, setCoord] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     setCoord({ x: e.screenX, y: e.screenY });
   };
-
 
   let limitLoop = 4;
   const tapHandler = (indexIncrement: number) => {
@@ -48,7 +35,7 @@ const Reviews = () => {
     }
   };
   const internNotifyHandler = (value: number) => {
-    ReactGA.event('User scrolled in reviews');
+    ReactGA.event("User scrolled in reviews");
 
     if (window.screen.availWidth < 428) {
       if (CardIndex + value >= limitLoop + 1 || CardIndex + value === -1) return;
@@ -62,8 +49,7 @@ const Reviews = () => {
   return (
     <>
       <div className={styles.reviewContainer} onMouseMove={handleMouseMove}>
-        <div className={styles.headerContainer}>
-        </div>
+        <div className={styles.headerContainer}></div>
         <div className={styles.reviewSection}>
           <DragItem sliderActiveCoords={sliderHandler} />
           <div className={styles.reviewWall}>
@@ -79,39 +65,20 @@ const Reviews = () => {
                   ? styles.threeSlide
                   : CardIndex === 4
                   ? styles.forthSlide
-                  : ''
+                  : ""
               }`}
             >
               <div className={styles.interiorPadder}>
+                <ReviewCard styler={CardIndex === 0 ? "onFocus" : CardIndex >= 2 ? "hide" : ""} img={img1} />
+                <ReviewCard styler={CardIndex === 1 ? "onFocus" : CardIndex >= 3 ? "hide" : ""} img={img2} />
+                <ReviewCard styler={CardIndex === 2 ? "onFocus" : CardIndex >= 4 ? "hide" : ""} img={img3} />
                 <ReviewCard
-                  styler={CardIndex === 0 ? 'onFocus' : CardIndex >= 2 ? 'hide' : ''}
-                  img = {img1}
-
-    
-                  />
-                <ReviewCard
-                  styler={CardIndex === 1 ? 'onFocus' : CardIndex >= 3 ? 'hide' : ''}
-                  img = {img2}
-           
-
+                  styler={CardIndex === 3 ? "onFocus" : CardIndex >= 5 || CardIndex <= 1 ? "hide" : ""}
+                  img={img1}
                 />
                 <ReviewCard
-                  styler={CardIndex === 2 ? 'onFocus' : CardIndex >= 4 ? 'hide' : ''}
-                  img = {img3}
-              
-
-                />
-                <ReviewCard
-                  styler={CardIndex === 3 ? 'onFocus' : CardIndex >= 5 || CardIndex <= 1 ? 'hide' : ''}
-                  img = {img1}
-           
-
-                />
-                <ReviewCard
-                  styler={CardIndex === 4 ? 'onFocus' : CardIndex === 2 || CardIndex <= 2 ? 'hide' : ''}
-                  img = {img2}
-                  
-
+                  styler={CardIndex === 4 ? "onFocus" : CardIndex === 2 || CardIndex <= 2 ? "hide" : ""}
+                  img={img2}
                 />
               </div>
             </div>
