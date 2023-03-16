@@ -57,10 +57,10 @@ function App() {
                 <Navbar />
 
                 <Routes>
-                  <Route path={`${process.env.PUBLIC_URL}/proiect/:projectName`} element={<Homepage />} />
+                  <Route path={`${process.env.PUBLIC_URL}/`} element={<Homepage />} />
+                  <Route path={`/proiect/:projectName`} element={<Homepage />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/pachete" element={<Page1 />} />
-                  <Route path={`${process.env.PUBLIC_URL}/`} element={<Homepage />} />
                 </Routes>
                 <Footer />
               </AuthProvider>

@@ -3,9 +3,12 @@
 @import "../../main.module.scss";
 
 .cardContainer {
-  width: 600px;
+  width: 600px; //is override by card-container
   height: 375px;
 
+  @include media("<tablet") {
+    height: 248px;
+  }
   img {
     object-fit: cover;
   }

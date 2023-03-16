@@ -99,6 +99,11 @@ code {
   padding: 20px 17px;
   transition: all 0.25s linear;
 }
+@media screen and (max-width: 992px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
 
 .card-container:hover .card-title {
   bottom: 0;

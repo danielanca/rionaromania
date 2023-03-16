@@ -13,7 +13,7 @@ const InformationWrap = () => {
 
       <h3>
         {parse(
-          `Nu orice afacere este un brand, cum sunteti tentati sa credem. <span class="topText">Brandul</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    reprezinta fuziunea dintre mai multe elemente care dau nastere produsului sau companiei noastre, fuziune care ne face unici, diferiti, recognoscibili. Cand vorbim despre brand, ne putem raporta la doua dimensiuni: <br><br> dimensiunea reala, oferita de caracteristicile brandului (ce este si ce face) <br>dimensiunea perceptiva, legata de felul in care publicul vede ce facem, de felul in care suntem perceputi.`
+          `Nu orice afacere este un brand, cum sunteti tentati sa credem. <br><span class="topText">Brandul</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    reprezinta fuziunea dintre mai multe elemente care dau nastere produsului sau companiei noastre, fuziune care ne face unici, diferiti, recognoscibili. Cand vorbim despre brand, ne putem raporta la doua dimensiuni: <br><br> dimensiunea reala, oferita de caracteristicile brandului (ce este si ce face) <br>dimensiunea perceptiva, legata de felul in care publicul vede ce facem, de felul in care suntem perceputi.`
         )}
       </h3>
     </div>
