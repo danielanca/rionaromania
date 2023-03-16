@@ -7,7 +7,7 @@ import Reviews from "./slider/Reviews";
 import ReviewCard from "./slider/ReviewCard";
 import Page1 from "../src/components/Component/Page1";
 import Contact from "../src/components/Contact/Contact";
-
+import MenuMobile from "../src/components/MenuMobile/MenuMobile";
 import MainNavigation from "./Navigation/MainNavigation";
 import { getData } from "./data/productList";
 import { AuthProvider } from "./components/context/AuthProvider";
