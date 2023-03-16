@@ -1,5 +1,4 @@
 .App {
-  /* max-width: 1920px; */
   margin: auto;
   font-family: "DM Sans Regular";
   background-color: #151515;
@@ -18,16 +17,16 @@
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 } */
+
 .topText {
   margin-top: -10px;
-  color: #ec4c45;
+  color: #f33d73;
   position: absolute;
+
+  @media only screen and (max-width: 576px) {
+    margin-top: -5px;
+  }
 }
 
 .project-title {
