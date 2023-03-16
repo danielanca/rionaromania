@@ -1,7 +1,8 @@
 const images = {
   rionaLogo: require("./../media/riona/riona_alb.svg").default,
   rionaLogoBlack: require("./../media/riona/riona_negru.svg").default,
-  heroBoy: require("./../media/riona/heroBoy.png").default,
+  heroBoy:
+    "https://firebasestorage.googleapis.com/v0/b/daniancaro-23015.appspot.com/o/ProiecteRiona%2FHomepage%2FheroBoy.png?alt=media&token=8101a49e-e71c-4f1d-beeb-fe077cda2a97",
   logoBrands: require("./../media/riona/icons/logoBrands.svg").default,
   arrowRiona: require("./../media/riona/arrow.svg").default,
   infoIcon: require("./../media/riona/infoIcon.svg").default,

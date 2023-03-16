@@ -1,0 +1,12 @@
+@import "../../../node_modules/include-media/dist/include-media";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../main.module.scss";
+
+.cardContainer {
+  width: 600px;
+  height: 375px;
+
+  img {
+    object-fit: cover;
+  }
+}

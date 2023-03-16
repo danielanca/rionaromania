@@ -14,10 +14,15 @@ export default function CardsList({ cards, filter, projectUp }: Props) {
   const filtredCards = filter === "" ? cards : cards;
   console.log("CardsList:", cards);
   return (
-    <div className={styles.portfolioWrapper + " row cards-container px-2"}>
-      {filtredCards.map((card, index) => (
-        <Card key={index} card={card} projectCall={projectUp} />
-      ))}
-    </div>
+    <>
+      <div className={styles.titleHead}>
+        <h2>{"Portofoliu"}</h2>
+      </div>
+      <div className={styles.portfolioWrapper + " row cards-container px-2"}>
+        {filtredCards.map((card, index) => (
+          <Card key={index} card={card} projectCall={projectUp} />
+        ))}
+      </div>
+    </>
   );
 }

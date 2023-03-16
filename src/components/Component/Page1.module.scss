@@ -7,14 +7,15 @@
   background: url("./logo.svg"), black;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-bottom: 30rem;
+  padding-bottom: 16rem;
 }
 
 .title {
-  height: 700px;
+  height: 460px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Bebas Neue";
 
   @include media("<=tablet") {
     height: 300px;
@@ -26,6 +27,8 @@
   background: -webkit-linear-gradient(90.38deg, #ff6e9a 0.11%, #e7422e 97.09%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: underline 6px solid #ff6e9a;
+  text-underline-offset: 10px;
 
   @include media("<=tablet") {
     font-size: 35px;
@@ -45,8 +48,9 @@
   }
 }
 .card {
-  width: 450px;
+  width: 30%;
   height: 100%;
+  min-width: 360px;
   padding: 2rem;
   position: relative;
 
@@ -75,10 +79,11 @@
 
 .euro {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: bolder;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "DM Sans Bold";
 
   @include media("<=tablet") {
     font-size: 25px;
@@ -209,7 +214,7 @@
 .textElegant {
   padding: 0 1rem;
   font-size: 20px;
-  font-weight: 700;
+  // font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.1454544961452484px;
   text-align: left;
