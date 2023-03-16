@@ -7,4 +7,26 @@
   margin: auto !important;
   padding-bottom: 205px;
   padding-top: 200px;
+
+  @include media("<tablet") {
+    padding-top: 100px;
+  }
+}
+
+.titleHead {
+  margin-top: 5rem;
+  h2 {
+    font-family: "Bebas Neue Regular", cursive;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1.2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    color: white;
+
+    @include media("<tablet") {
+      letter-spacing: 0.7rem;
+      font-size: 2rem;
+    }
+  }
 }

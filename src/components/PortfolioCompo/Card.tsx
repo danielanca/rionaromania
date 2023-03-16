@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Card.module.scss";
 
 type CardProps = {
   card: {
@@ -18,7 +19,7 @@ const Card: React.FC<CardProps> = ({ card, projectCall }) => {
 
   return (
     <Link onClick={goToTop} className="p-0" to={`/proiect/${card.link}`}>
-      <div className="col-12 p-0  card-container">
+      <div className={styles.cardContainer + " col-12 p-0  card-container"}>
         <img src={card.images[0]} alt={card.title} className="card-img" />
         <h2 className="card-title ">{card.title}</h2>
       </div>

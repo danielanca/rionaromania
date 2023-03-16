@@ -6,6 +6,7 @@ import man from "./man.svg";
 import man2 from "./man2.svg";
 import smooth from "./smooth.svg";
 import elegant from "./elegant.svg";
+import parse from "html-react-parser";
 
 const Page1 = () => {
   return (
@@ -145,13 +146,15 @@ const Page1 = () => {
         </div>
 
         <div className={styles.textElegant}>
-          Cărțile de vizită au un rol deosebit de important în sfera afacerilor, fiind un mijloc foarte eficient de
-          transmitere a informațiilor, ce impun încredere și profesionalism. Eleganța și stilul pot fi transmise de acum
-          și prin intermediul noului model de carte de vizită. Acest model este unul premium și este realizat din
-          meteriale metalice de foarte bună calitate ce își păstrează proprietățile timp. Aceste cărți sunt rezistente
-          la apă, iar materialul permite realizarea unui designe impecabil, dar și gravarea unui cod QR cu o utilizare
-          nelimitată. Unul dintre avantajele acestui model este că poate înlocui clasicele cărți de vizită din hârtie
-          prin reducerea numărului acestora de la 1000 la unul singur.
+          <p>
+            {parse(`<strong>Cărțile de vizită </strong> au un <strong>rol deosebit de important</strong> în sfera afacerilor, fiind un mijloc foarte eficient de
+            transmitere a informațiilor, ce <strong>impun încredere și profesionalism.</strong> <br> <strong>Eleganța și stilul</strong> pot fi transmise de acum
+            și prin intermediul noului model de carte de vizită. Acest model este unul <strong>premium</strong> și este realizat din
+            meteriale metalice de foarte bună calitate ce își păstrează proprietățile in timp. Aceste cărți <strong>sunt rezistente
+            la apă</strong>, iar materialul permite <strong>realizarea unui design impecabil</strong>, dar și <strong>gravarea unui cod QR</strong> cu o utilizare
+            nelimitată. Unul dintre avantajele acestui model este că poate înlocui clasicele cărți de vizită din hârtie
+            prin reducerea numărului acestora de la 1000 la unul singur.`)}
+          </p>
         </div>
       </div>
     </div>
