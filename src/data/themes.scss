@@ -19,7 +19,11 @@
   src: url(./../fonts/blemo.ttf);
   font-weight: normal;
 }
-
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url(./../fonts/BebasNeueRegular.ttf);
+  font-weight: normal;
+}
 $colors: (
   greenMontan: #00739e,
 

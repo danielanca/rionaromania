@@ -142,13 +142,13 @@
 }
 .pitchText {
   z-index: 10;
+  font-family: "Bebas Neue Regular";
   @include media("<tablet") {
     height: 340px;
-    outline: 2px solid white;
     width: 100%;
   }
   h2 {
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue Regular";
     font-size: 5em;
     line-height: 1em;
     margin-bottom: 0;
@@ -161,6 +161,7 @@
   }
 }
 .little {
+  font-family: "Bebas Neue Regular";
   color: #f33d73 !important;
   font-size: 3em !important;
   letter-spacing: 0.4em;
