@@ -10,7 +10,7 @@ import star from "./Vector.svg";
 import phone from "./phone.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
+import { NavHashLink } from "react-router-hash-link";
 const MenuMobile = () => {
   const navRef = useRef(null);
   const showNavbar = () => {
@@ -29,18 +29,18 @@ const MenuMobile = () => {
         </a>
 
         <div className={styles.menu}>
-          <a href="/">
-            <img src={home} alt="/" />
+          <NavHashLink onClick={showNavbar} className={styles.HashLinkStyle} to={"/"}>
+            <img src={home} />
             Home
-          </a>
-          <a href="/pachete">
-            <img src={portofoliu} alt="/" />
+          </NavHashLink>
+          <NavHashLink onClick={showNavbar} className={styles.HashLinkStyle} to={"/pachete"}>
+            <img src={star} />
             Pachete
-          </a>
-          <a href="/contact">
-            <img src={phone} alt="/" />
+          </NavHashLink>
+          <NavHashLink onClick={showNavbar} className={styles.HashLinkStyle} to={"/contact"}>
+            <img src={phone} />
             Contact
-          </a>
+          </NavHashLink>
         </div>
         <div className={styles.social}>
           <a href="/" className={styles.youtube}>

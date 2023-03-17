@@ -40,7 +40,7 @@
   display: flex;
   column-gap: 20px;
   @include media("<tablet") {
-    margin-top: 17%;
+    margin-top: 10%;
     justify-content: center;
   }
   .pricesButton {
@@ -112,17 +112,17 @@
       margin-top: -60%;
       -webkit-mask-image: linear-gradient(
         to left,
-        rgb(0, 0, 0) 6%,
-        rgb(0, 0, 0) 66%,
-        rgba(0, 0, 0, 0.1) 76%,
-        rgba(0, 0, 0, 0) 38%
+        rgb(0, 0, 0) 57%,
+        rgb(0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.1) 77%,
+        rgba(0, 0, 0, 0) 88%
       );
       mask-image: linear-gradient(
         to left,
-        rgb(0, 0, 0) 6%,
-        rgb(0, 0, 0) 66%,
-        rgba(0, 0, 0, 0.1) 76%,
-        rgba(0, 0, 0, 0) 38%
+        rgb(0, 0, 0) 57%,
+        rgb(0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.1) 77%,
+        rgba(0, 0, 0, 0) 80%
       );
     }
   }

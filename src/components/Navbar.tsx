@@ -24,7 +24,9 @@ const NavBar = () => {
         <>
           <div className={styles.wrapper}>
             <div className={styles.logoWrapper}>
-              <img src={images.rionaLogo} />
+              <NavHashLink className={styles.HashLinkStyle} to={"/"}>
+                <img src={images.rionaLogo} />
+              </NavHashLink>
             </div>
             <MenuMobile />
             <div className={styles.menuItems}>
