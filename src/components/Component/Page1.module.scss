@@ -4,7 +4,7 @@
   max-width: 100rem;
   margin: auto;
   height: 100%;
-  background: url("./logo.svg"), black;
+  background: url("./logo.svg"), #151515;
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 16rem;
@@ -45,6 +45,7 @@
     display: grid;
     align-items: center;
     row-gap: 4rem;
+    padding: 0 5%;
   }
 }
 .card {
@@ -55,7 +56,10 @@
   position: relative;
 
   @include media("<=tablet") {
-    width: 300px;
+    width: 89%;
+    min-width: 0px;
+    padding: 1rem 2rem;
+    margin: auto;
   }
 }
 
@@ -66,14 +70,14 @@
 }
 
 .cardTitle {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @include media("<=tablet") {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
@@ -95,7 +99,7 @@
   font-weight: 500;
 
   @include media("<=tablet") {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -146,24 +150,33 @@
   display: flex;
   padding: 0.5rem;
   gap: 1rem;
+
+  @include media("<tablet") {
+    grid-gap: 1rem;
+    gap: 1rem;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
 }
 
 .manLogo {
   position: absolute;
-  margin-top: -39%;
-  margin-left: -20%;
+  margin-top: -166px;
+  margin-left: -105px;
+  left: 0;
 
   @include media("<=tablet") {
-    margin-top: -58%;
-    margin-left: -40%;
+    margin-top: -114px;
+    margin-left: -60px;
+    width: 170px;
   }
 }
 
 .manLogo2 {
   position: absolute;
   margin-top: -42.5%;
-  margin-left: 60%;
-
+  right: 0;
+  margin-right: -250px;
   @include media("<=tablet") {
     display: none;
   }
