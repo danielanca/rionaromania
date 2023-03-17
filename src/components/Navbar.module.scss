@@ -10,7 +10,6 @@
   position: sticky;
   left: 0%;
   z-index: 1000;
-  outline: 3px solid white;
   margin: auto;
 
   @include media("<tablet") {
@@ -24,6 +23,9 @@
   align-items: center;
   @include flexCenter;
 
+  @include media("<tablet") {
+    grid-column: span 3;
+  }
   img {
     height: 40px;
 

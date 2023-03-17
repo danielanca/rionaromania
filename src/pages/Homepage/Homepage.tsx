@@ -59,20 +59,20 @@ const Homepage = () => {
             <h2 className={styles.little}>{parse(`la urmatorul `)}</h2>
             <h2 className={styles.little}>{parse(`nivel `)}</h2>
             <div className={styles.socialWrapper}>
-              <img src={images.socialIcons.instagram} />
-              <img src={images.socialIcons.facebook} />
+              <a href="https://www.instagram.com/riona.romania" target="_blank">
+                <img src={images.socialIcons.instagram} />{" "}
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100086601934343" target="_blank">
+                <img src={images.socialIcons.facebook} />
+              </a>
             </div>
             <div className={styles.actionWrapper}>
-              <button className={styles.pricesButton}>
-                <NavHashLink className={styles.HashLinkStyle} to={"/"}>
-                  {"Preturi"}
-                </NavHashLink>
-              </button>
-              <button className={styles.callNow}>
-                <NavHashLink className={styles.HashLinkStyle} to={"/contact"}>
-                  {"Contacteaza-ne acum"}
-                </NavHashLink>
-              </button>
+              <NavHashLink className={styles.HashLinkStyle} to={"/pachete"}>
+                <button className={styles.pricesButton}>{"Preturi"}</button>{" "}
+              </NavHashLink>
+              <NavHashLink className={styles.HashLinkStyle} to={"/contact"}>
+                <button className={styles.callNow}>{"Contacteaza-ne acum"}</button>{" "}
+              </NavHashLink>
             </div>
           </div>
         </div>

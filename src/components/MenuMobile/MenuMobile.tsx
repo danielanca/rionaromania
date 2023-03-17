@@ -33,12 +33,8 @@ const MenuMobile = () => {
             <img src={home} alt="/" />
             Home
           </a>
-          <a href="/servicii">
+          <a href="/pachete">
             <img src={portofoliu} alt="/" />
-            Portofoliu
-          </a>
-          <a href="/blog">
-            <img src={star} alt="/" />
             Pachete
           </a>
           <a href="/contact">
@@ -50,10 +46,10 @@ const MenuMobile = () => {
           <a href="/" className={styles.youtube}>
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a href="/" className={styles.facebook}>
+          <a href="https://www.facebook.com/profile.php?id=100086601934343" className={styles.facebook}>
             <FontAwesomeIcon icon={faFacebook} size="2x" />
           </a>
-          <a href="/" className={styles.instagram}>
+          <a href="https://www.instagram.com/riona.romania" className={styles.instagram}>
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
         </div>
