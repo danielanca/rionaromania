@@ -236,6 +236,9 @@ select {
 }
 
 .submitSection {
+  @include media("<tablet") {
+    width: 100%;
+  }
   button {
     padding: 10px 0;
     font-weight: bold;

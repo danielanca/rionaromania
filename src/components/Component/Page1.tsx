@@ -7,8 +7,10 @@ import man2 from "./man2.svg";
 import smooth from "./smooth.svg";
 import elegant from "./elegant.svg";
 import parse from "html-react-parser";
-
+import { NavHashLink } from "react-router-hash-link";
 const Page1 = () => {
+  const goToTop = (_) => window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
     <div className={styles.page1}>
       <div className={styles.title}>
@@ -63,7 +65,9 @@ const Page1 = () => {
             </div>
 
             <div className={styles.cardButton}>
-              <button>Contacteaza-ne</button>
+              <NavHashLink onClick={goToTop} className={styles.HashLinkStyle} to={"/contact"}>
+                <button className={styles.pricesButton}>{"Contacteaza-ne"}</button>
+              </NavHashLink>
             </div>
           </div>
         </div>
@@ -130,7 +134,9 @@ const Page1 = () => {
             </div>
 
             <div className={styles.cardButton}>
-              <button>Contacteaza-ne</button>
+              <NavHashLink onClick={goToTop} className={styles.HashLinkStyle} to={"/contact"}>
+                <button className={styles.pricesButton}>{"Contacteaza-ne"}</button>
+              </NavHashLink>
             </div>
           </div>
         </div>

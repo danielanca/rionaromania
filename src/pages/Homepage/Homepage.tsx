@@ -83,7 +83,7 @@ const Homepage = () => {
 
       <InformationWrap />
 
-      {/* <OurServices /> */}
+      <OurServices />
       <CardsList cards={Object.values(projectList)} filter={activeFilter} projectUp={handleSwitchProject} />
     </>
   );

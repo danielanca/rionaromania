@@ -132,8 +132,8 @@
   font-weight: 500;
 
   @include media("<=tablet") {
-    font-size: 12px;
     padding: 1rem 2rem;
+    font-size: 1em;
   }
 }
 
