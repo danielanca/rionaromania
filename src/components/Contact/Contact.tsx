@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import contactlogo from "./contact-logo.svg";
+import contactlogo from "../../media/riona/contactBoy.png";
 
 const Contact = () => {
   const submitMessage = () => {
