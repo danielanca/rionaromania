@@ -1,39 +1,31 @@
 import React, { useState } from "react";
 import images from "../../data/images";
 import styles from "./Homepage.module.scss";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import OurServices from "../../blocks/OurServices";
-import Reviews from "../../slider/Reviews";
-import { fakedata } from "../../components/PortfolioCompo/data/fake-data";
 import CardsList from "../../components/PortfolioCompo/CardsList";
-import { fakeDataObject } from "../../components/PortfolioCompo/data/fake-data";
-import { Container, Carousel } from "react-bootstrap";
 import InformationWrap from "../../components/MiniComponents/InformationWrap/InformationWrap";
 import projectList from "./projectList.json";
-import { HashLink, HashLink as Link, NavHashLink } from "react-router-hash-link";
+import { HashLink as Link, NavHashLink } from "react-router-hash-link";
 
 const Homepage = () => {
-  const fetchFakeData = async () => {
-    return Promise.resolve(fakedata);
-  };
   let params = useParams();
-  // let projectLink = params.projectName ? params.projectName : null;
+  const navigate = useNavigate();
   const [projectLink, setProjectLink] = useState(params.projectName ? params.projectName : null);
-  // const { isLoading, error, data } = useQuery("fakedata", fetchFakeData);
-  const cardsList = fakedata && JSON.parse(fakedata);
   const [activeFilter, setActiveFilter] = useState("");
   console.log("Project link is:", projectLink);
 
   const closeProject = () => {
     setProjectLink(null);
+    navigate("/");
   };
   const handleSwitchProject = (projectName: string) => {
     setProjectLink(projectName);
   };
   return (
     <>
-      {projectLink ? (
+      {projectLink && (
         <div className={styles.backdropModal}>
           <div className="container my-5">
             <div className={styles.topModal}>
@@ -47,8 +39,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      ) : (
-        ""
       )}
       <div className={styles.landingFirst}>
         <div className={styles.elipse} />
@@ -59,7 +49,7 @@ const Homepage = () => {
             <h2 className={styles.little}>{parse(`la urmatorul `)}</h2>
             <h2 className={styles.little}>{parse(`nivel `)}</h2>
             <div className={styles.socialWrapper}>
-              <a href="https://www.instagram.com/riona.romania" target="_blank">
+              <a href="https://www.instagram.com/riona.romania/" target="_blank">
                 <img src={images.socialIcons.instagram} />{" "}
               </a>
               <a href="https://www.facebook.com/profile.php?id=100086601934343" target="_blank">

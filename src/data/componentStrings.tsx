@@ -4,15 +4,11 @@ import images from "./images";
 export const socialString = {
   instagram: {
     imageSrc: images.socials.instagram,
-    link: "https://instagram.com/riona.ro"
+    link: "https://www.instagram.com/riona.romania/?igshid=YmMyMTA2M2Y%3D"
   },
   facebook: {
     imageSrc: images.socials.facebook,
-    link: "https://facebook.com/riona.ro"
-  },
-  twitter: {
-    imageSrc: images.socials.twitter,
-    link: "https://twitter.com/riona.ro"
+    link: "https://www.facebook.com/people/Rionaro/100086601934343/"
   }
 };
 

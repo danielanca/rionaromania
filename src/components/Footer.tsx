@@ -2,11 +2,8 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { uniqueId } from "lodash";
 import images from "../data/images";
-import Relaxbar from "./MiniComponents/Footers/Relaxbar";
-import { footerData } from "../data/componentStrings";
 import styles from "./../components/Footer.module.scss";
 import strings from "../data/strings.json";
-import NewsletterBanner from "./MiniComponents/HeadLiners/NewsletterBanner";
 import parse from "html-react-parser";
 import allPathsURL from "./../data/allPathsURL";
 import { getStringsList } from "../services/emails";
@@ -15,7 +12,6 @@ import { getType } from "./AdminArea/EditStrings/TableTypes";
 import { socialString } from "./../data/componentStrings";
 
 const Footer = () => {
-  // let { links, commercialData, ourShop } = strings.footerText.headLines;
   const { pathname } = useLocation();
   const [footerFetch, setFooterFetch] = useState({});
   useEffect(() => {
@@ -44,7 +40,9 @@ const Footer = () => {
             <div className={styles.logoSocials}>
               <div className={styles.socialsContainer}>
                 {Object.values(socialString).map((item) => (
-                  <img src={item.imageSrc} />
+                  <a href={item.link} target="_blank">
+                    <img src={item.imageSrc} />
+                  </a>
                 ))}
               </div>
             </div>

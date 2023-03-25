@@ -11,6 +11,7 @@ import phone from "./phone.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { NavHashLink } from "react-router-hash-link";
+import images from "../../data/images";
 const MenuMobile = () => {
   const navRef = useRef(null);
   const showNavbar = () => {
@@ -19,9 +20,9 @@ const MenuMobile = () => {
 
   return (
     <div className={styles.header}>
-      <a href="/" className={styles.logo}>
-        <img src={logo} alt="riona-logo" />
-      </a>
+      <NavHashLink className={styles.HashLinkStyle} to={"/"}>
+        <img src={images.rionaLogo} />
+      </NavHashLink>
 
       <nav ref={navRef}>
         <a href="/" className={styles.logoInterior}>
