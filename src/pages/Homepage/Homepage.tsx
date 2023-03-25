@@ -74,7 +74,7 @@ const Homepage = () => {
       <InformationWrap />
 
       <OurServices />
-      <CardsList cards={Object.values(projectList)} filter={activeFilter} projectUp={handleSwitchProject} />
+      <CardsList cards={Object.values(projectList)} projectUp={handleSwitchProject} />
     </>
   );
 };

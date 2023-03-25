@@ -36,7 +36,6 @@ const NavBar = () => {
                     {"Home"}
                   </NavHashLink>
                 </li>
-
                 <li>
                   <NavHashLink className={styles.HashLinkStyle} to={"/pachete"}>
                     {"Pachete"}

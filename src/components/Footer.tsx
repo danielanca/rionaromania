@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { uniqueId } from "lodash";
 import images from "../data/images";
@@ -6,19 +6,10 @@ import styles from "./../components/Footer.module.scss";
 import strings from "../data/strings.json";
 import parse from "html-react-parser";
 import allPathsURL from "./../data/allPathsURL";
-import { getStringsList } from "../services/emails";
-import { getType } from "./AdminArea/EditStrings/TableTypes";
-
 import { socialString } from "./../data/componentStrings";
 
 const Footer = () => {
   const { pathname } = useLocation();
-  const [footerFetch, setFooterFetch] = useState({});
-  useEffect(() => {
-    getStringsList("legalInfo").then((result: getType) => {
-      setFooterFetch(JSON.parse(JSON.stringify(result.resultSent.legalData)));
-    });
-  }, []);
 
   let navItems = strings.navItemsFooter;
 
