@@ -68,6 +68,10 @@
       min-width: 130px;
       width: auto;
       height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
     }
   }
 }
